@@ -1,17 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <WalletConnect />
+    <SolanaStaking />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WalletConnect from './components/WalletConnect.vue';
+import SolanaStaking from './components/SolanaStaking.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    WalletConnect,
+    SolanaStaking,
+  },
+};
 </script>
 
 <style>
